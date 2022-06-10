@@ -4,9 +4,20 @@
 
 #include "motivation.h"
 
-motivation::motivation() {
+motivation::motivation(bool b) {
 
-    initialQuotes = quotes;
+    if(b) {
+        initialQuotesRemoved = true;
+    }
+
+    else{
+        quotes = initialQuotes;
+        initialQuotesRemoved = false;
+    }
+
+    _initCheck = this;
+
+    assert((this->properlyInitialized(), "Constructor must end in properlyInitialized state"));
 
 }
 
@@ -14,23 +25,75 @@ motivation::motivation(const vector<string>& ownQuotes, bool b) {
 
     if(b){
         quotes = ownQuotes;
+        vector<string> sizeCheck;
+        set_union(ownQuotes.begin(), ownQuotes.end(), initialQuotes.begin(), initialQuotes.end(), sizeCheck.begin());
+        if(sizeCheck.size() == ownQuotes.size()+initialQuotes.size()) {
+            initialQuotesRemoved = true;
+        }
+        else{
+            initialQuotesRemoved = false;
+        }
     }
 
     else{
+        initialQuotesRemoved = false;
+        quotes = initialQuotes;
         for(auto &quote: ownQuotes){
-            if(find(quotes.begin(), quotes.end(), quote) != quotes.end()){
-                cout << "Warning: One of my initial quotes detected in your list, the quote was not added a second time.";
-            }
-            else{
-                quotes.push_back(quote);
-            }
+            assert(("One of my original quotes detected in your list, please remove it or exclude my own list.",
+                    find(quotes.begin(), quotes.end(), quote) == quotes.end()));
+            quotes.push_back(quote);
         }
     }
+
+    _initCheck = this;
+
+    assert((this->properlyInitialized(), "Constructor must end in properlyInitialized state"));
+    for(auto &check: ownQuotes){
+        // Why not, we'll check if everything was properly added.
+        // Can't ever be certain enough, right?
+        assert((find(quotes.begin(), quotes.end(), check) != quotes.end()));
+    }
+
+}
+
+motivation::motivation(const string &filename, bool b) {
+
+    assert(("Invalid file given: please provide a .txt file", filename.find(".txt") == filename.size()-4));
+
+    if(!b){
+        quotes = initialQuotes;
+        initialQuotesRemoved = false;
+    }
+
+    else{
+        initialQuotesRemoved = true;
+    }
+
+    ifstream input(filename);
+    string newLine;
+    while(getline(input, newLine)){
+        quotes.push_back(newLine);
+    }
+
+    _initCheck = this;
+
+    assert((this->properlyInitialized(), "Constructor must end in properlyInitialized state"));
+
+}
+
+bool motivation::properlyInitialized() {
+
+    if(_initCheck == this){
+        return true;
+    }
+
+    return false;
 
 }
 
 void motivation::giveMotivations(int amount, double frequency) {
 
+    assert(("Object \"motivation\" was not properly initialized when calling giveMotivations()", this->properlyInitialized()));
     assert(("Your list of quotes is currently empty! Add some and then try again.", !this->quotes.empty()));
 
     vector<string> alreadyPrinted;
@@ -54,22 +117,23 @@ void motivation::giveMotivations(int amount, double frequency) {
 
 }
 
-void motivation::addOwnQuote(string &quote) {
+void motivation::addOwnQuote(const string &quote) {
 
-    if (find(quotes.begin(), quotes.end(), quote) == quotes.end()) {
-        quotes.push_back(quote);
-        cout << "Quote: \"" + quote + "\" successfully added to your list of quotes!" << endl;
-        return;
+    assert(("Object \"motivation\" was not properly initialized when calling addOwnQuote()", this->properlyInitialized()));
+    assert(("Your given quote was already added", find(quotes.begin(), quotes.end(), quote)) == quotes.end());
+
+    quotes.push_back(quote);
+    if(find(initialQuotes.begin(), initialQuotes.end(), quote) != initialQuotes.end() && initialQuotesRemoved){
+        initialQuotesRemoved = false;
     }
-    else {
-        cout << "Your given quote is already inside the quote-list. "
-                "To keep things equiprobable it was not added a second time." << endl;
-        return;
-    }
+    cout << "Quote: \"" + quote + "\" successfully added to your list of quotes!" << endl;
 
 }
 
 void motivation::deleteInitialQuotes() {
+
+    assert(("Object \"motivation\" was not properly initialized when calling deleteInitialQuotes()", this->properlyInitialized()));
+    assert(("All initial quotes were already removed", !initialQuotesRemoved));
 
     for(auto &quote: initialQuotes){
         if(find(quotes.begin(), quotes.end(), quote) != quotes.end()){

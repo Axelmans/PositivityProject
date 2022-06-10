@@ -53,10 +53,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\axeld\CLionProjects\goodTimes
+CMAKE_SOURCE_DIR = C:\Users\axeld\CLionProjects\PositivityProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/goodTimes.dir/clean
 CMakeFiles/goodTimes.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\goodTimes.dir\build.make CMakeFiles/goodTimes.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\goodTimes.dir\build.make CMakeFiles/goodTimes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target goodTimes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target goodTimes"
 .PHONY : CMakeFiles/goodTimes.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/goodTimes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/goodTimes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/goodTimes.dir/rule
 
 # Convenience name for target.

@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\axeld\CLionProjects\goodTimes
+CMAKE_SOURCE_DIR = C:\Users\axeld\CLionProjects\PositivityProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/goodTimes.dir/depend.make
@@ -67,29 +67,29 @@ include CMakeFiles/goodTimes.dir/flags.make
 
 CMakeFiles/goodTimes.dir/main.cpp.obj: CMakeFiles/goodTimes.dir/flags.make
 CMakeFiles/goodTimes.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/goodTimes.dir/main.cpp.obj"
-	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\goodTimes.dir\main.cpp.obj -c C:\Users\axeld\CLionProjects\goodTimes\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/goodTimes.dir/main.cpp.obj"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\goodTimes.dir\main.cpp.obj -c C:\Users\axeld\CLionProjects\PositivityProject\main.cpp
 
 CMakeFiles/goodTimes.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/goodTimes.dir/main.cpp.i"
-	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\axeld\CLionProjects\goodTimes\main.cpp > CMakeFiles\goodTimes.dir\main.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\axeld\CLionProjects\PositivityProject\main.cpp > CMakeFiles\goodTimes.dir\main.cpp.i
 
 CMakeFiles/goodTimes.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/goodTimes.dir/main.cpp.s"
-	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\axeld\CLionProjects\goodTimes\main.cpp -o CMakeFiles\goodTimes.dir\main.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\axeld\CLionProjects\PositivityProject\main.cpp -o CMakeFiles\goodTimes.dir\main.cpp.s
 
 CMakeFiles/goodTimes.dir/motivation.cpp.obj: CMakeFiles/goodTimes.dir/flags.make
 CMakeFiles/goodTimes.dir/motivation.cpp.obj: ../motivation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/goodTimes.dir/motivation.cpp.obj"
-	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\goodTimes.dir\motivation.cpp.obj -c C:\Users\axeld\CLionProjects\goodTimes\motivation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/goodTimes.dir/motivation.cpp.obj"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\goodTimes.dir\motivation.cpp.obj -c C:\Users\axeld\CLionProjects\PositivityProject\motivation.cpp
 
 CMakeFiles/goodTimes.dir/motivation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/goodTimes.dir/motivation.cpp.i"
-	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\axeld\CLionProjects\goodTimes\motivation.cpp > CMakeFiles\goodTimes.dir\motivation.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\axeld\CLionProjects\PositivityProject\motivation.cpp > CMakeFiles\goodTimes.dir\motivation.cpp.i
 
 CMakeFiles/goodTimes.dir/motivation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/goodTimes.dir/motivation.cpp.s"
-	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\axeld\CLionProjects\goodTimes\motivation.cpp -o CMakeFiles\goodTimes.dir\motivation.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\axeld\CLionProjects\PositivityProject\motivation.cpp -o CMakeFiles\goodTimes.dir\motivation.cpp.s
 
 # Object files for target goodTimes
 goodTimes_OBJECTS = \
@@ -105,7 +105,7 @@ goodTimes.exe: CMakeFiles/goodTimes.dir/build.make
 goodTimes.exe: CMakeFiles/goodTimes.dir/linklibs.rsp
 goodTimes.exe: CMakeFiles/goodTimes.dir/objects1.rsp
 goodTimes.exe: CMakeFiles/goodTimes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable goodTimes.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable goodTimes.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\goodTimes.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -117,6 +117,6 @@ CMakeFiles/goodTimes.dir/clean:
 .PHONY : CMakeFiles/goodTimes.dir/clean
 
 CMakeFiles/goodTimes.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\axeld\CLionProjects\goodTimes C:\Users\axeld\CLionProjects\goodTimes C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug C:\Users\axeld\CLionProjects\goodTimes\cmake-build-debug\CMakeFiles\goodTimes.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\axeld\CLionProjects\PositivityProject C:\Users\axeld\CLionProjects\PositivityProject C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug C:\Users\axeld\CLionProjects\PositivityProject\cmake-build-debug\CMakeFiles\goodTimes.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/goodTimes.dir/depend
 

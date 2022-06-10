@@ -6,16 +6,20 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/axeld/CLionProjects/goodTimes/motivation.cpp
+C:/Users/axeld/CLionProjects/PositivityProject/main.cpp
+iostream
+-
 motivation.h
-C:/Users/axeld/CLionProjects/goodTimes/motivation.h
+C:/Users/axeld/CLionProjects/PositivityProject/motivation.h
 
-C:/Users/axeld/CLionProjects/goodTimes/motivation.h
+C:/Users/axeld/CLionProjects/PositivityProject/motivation.h
 string
 -
 vector
 -
 iostream
+-
+fstream
 -
 algorithm
 -

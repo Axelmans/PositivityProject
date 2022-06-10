@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/axeld/CLionProjects/goodTimes/main.cpp" "C:/Users/axeld/CLionProjects/goodTimes/cmake-build-debug/CMakeFiles/goodTimes.dir/main.cpp.obj"
-  "C:/Users/axeld/CLionProjects/goodTimes/motivation.cpp" "C:/Users/axeld/CLionProjects/goodTimes/cmake-build-debug/CMakeFiles/goodTimes.dir/motivation.cpp.obj"
+  "C:/Users/axeld/CLionProjects/PositivityProject/main.cpp" "C:/Users/axeld/CLionProjects/PositivityProject/cmake-build-debug/CMakeFiles/goodTimes.dir/main.cpp.obj"
+  "C:/Users/axeld/CLionProjects/PositivityProject/motivation.cpp" "C:/Users/axeld/CLionProjects/PositivityProject/cmake-build-debug/CMakeFiles/goodTimes.dir/motivation.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
