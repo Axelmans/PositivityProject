@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/axeld/CLionProjects/goodTimes/motivation.cpp
+motivation.h
+C:/Users/axeld/CLionProjects/goodTimes/motivation.h
+
+C:/Users/axeld/CLionProjects/goodTimes/motivation.h
+string
+-
+vector
+-
+iostream
+-
+algorithm
+-
+random
+-
+cassert
+-
+mapidbg.h
+-
+windows.h
+-
+unistd.h
+-
+iostream
+-
+thread
+-
+chrono
+-
+
